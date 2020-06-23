@@ -2,6 +2,8 @@ import 'package:fitness_app/radial_progressbar.dart';
 import 'package:fitness_app/top_bar.dart';
 import 'package:flutter/material.dart';
 
+import 'list.dart';
+
 void main()=>runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -13,7 +15,9 @@ class MyApp extends StatelessWidget {
           body:Column(
             children: <Widget>[
               TopBar(),
-              RadialProgressBar()
+              RadialProgressBar(),
+              SizedBox(height: 20,),
+              ListData(),
             ],
           ),
         ),
